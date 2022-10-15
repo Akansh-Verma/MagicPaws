@@ -9,6 +9,6 @@ import magicpaws.backend.repository.storeRepository;
 @Service
 public interface storeService {
     @Autowired 
-    private storeRepository storerepository;
+    public storeRepository storerepository;
     
 }
