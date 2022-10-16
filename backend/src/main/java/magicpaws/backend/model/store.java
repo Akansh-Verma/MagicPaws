@@ -9,14 +9,12 @@ import lombok.Data;
 
 @Data
 @Entity
-public class store {
+public class Store {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String name;
     private String address;
-
-    public store() {
-    }
 
 }

@@ -1,14 +1,18 @@
 package magicpaws.backend.service;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import magicpaws.backend.repository.storeRepository;
+import magicpaws.backend.model.Store;
+import magicpaws.backend.repository.StoreRepository;
 
 @Service
-public interface storeService {
+public class StoreService {
     @Autowired 
-    public storeRepository storerepository;
+    StoreRepository storeRepository;
     
+    public void addProduct(Store store) {
+        storeRepository.save(store);
+    }
+   
 }
