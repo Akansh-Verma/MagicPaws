@@ -1,20 +1,22 @@
-package magicpaws.backend.model;
+package magicpaws.backend.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Data;
 
-@Data
 @Entity
-public class Store {
+@Data
+@Table(name = "magicpawsdb")
+public class EmployeeEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    private String name;
-    private String address;
-
+    private long id;
+    private String firstName;
+    private String lastName;
+    private String emailId;
 }
