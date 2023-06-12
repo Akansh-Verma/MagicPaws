@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
-import Navbar from "./components/Navbar";
-import AddEmployee from './components/AddEmployee';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from 'pages/home';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <AddEmployee />
-    </>
+    <Router>
+      <div>
+        <Routes>
+          <Route path='/' Component={ Home } />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

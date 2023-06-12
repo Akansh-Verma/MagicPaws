@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* Start Header component */
+.header {
+  background-color: #f5e8d6;
+  padding: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+.tagline {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation li {
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 40px;
+    height: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  .tagline {
+    font-size: 16px;
+  }
+  .navigation {
+    margin-top: 10px;
+  }
+  .search-bar input {
+    width: 200px;
   }
 }
+@media (max-width: 576px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation li {
+    margin: 5px 0;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+}
+/* End Header component */
