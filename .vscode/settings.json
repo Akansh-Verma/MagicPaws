@@ -14,5 +14,6 @@
             "database": "magicpaws",
             "username": "root"
         }
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }

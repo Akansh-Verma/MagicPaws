@@ -1,17 +1,12 @@
+import { Pages } from 'components/home/pages/Pages';
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from 'pages/home';
+import './style/main.scss';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path='/' Component={ Home } />
-        </Routes>
-      </div>
-    </Router>
+    <> 
+    <Pages />
+    </>
   );
 }
 
